@@ -1,0 +1,35 @@
+### Check API health
+GET http://localhost:3000
+
+
+### Get all users
+GET http://localhost:3000/users
+
+### Users with query param
+GET http://localhost:3000/users?role=ADMIN
+
+### Get user by ID
+GET http://localhost:3000/users/1
+
+### Get all interns
+GET http://localhost:3000/users/interns
+
+
+### Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Nikhil",
+    "email": "nikhil@gmail.com",
+    "role": "ADMIN"
+}
+
+
+### Update a user
+PATCH http://localhost:3000/users/123
+Content-Type: application/json
+
+{
+    "name": "Nikhil"
+}
