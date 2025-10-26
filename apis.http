@@ -9,7 +9,7 @@ GET http://localhost:3000/users
 GET http://localhost:3000/users?role=ADMIN
 
 ### Get user by ID
-GET http://localhost:3000/users/1
+GET http://localhost:3000/users/6
 
 ### Get all interns
 GET http://localhost:3000/users/interns
@@ -27,9 +27,9 @@ Content-Type: application/json
 
 
 ### Update a user
-PATCH http://localhost:3000/users/123
+PATCH http://localhost:3000/users/6
 Content-Type: application/json
 
 {
-    "name": "Nikhil"
+    "name": "Nikhil 123"
 }
